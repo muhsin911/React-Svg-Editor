@@ -1,0 +1,8 @@
+.logo {
+display: flex;
+justify-content: flex-start;
+height: 90px;
+left:80px;
+opacity: 50%; /* Adjust the logo size as needed */
+    /* Adds some space between the logo and the project name */
+}

@@ -1,0 +1,57 @@
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    height: 100vh; 
+    background-color: #00000000; 
+  }
+  
+  .controls-container {
+    background-color: rgba(0, 0, 0, 0);
+    flex: 1; 
+    padding: 25px; 
+    max-width: 200px; 
+    margin-top: 200px;
+}
+  
+  .svg-container {
+    border-radius: 10px;
+    flex: 2; 
+    border: 1px solid black;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    background-color: #fdfbfbb4; 
+    margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+      
+    }
+    .button, .color-input-wrapper {
+        width: calc(100% - 20px); /* Adjust width for smaller screens */
+        font-size: 14px; /* Adjust font size for better readability */
+        /* Adjust padding for a better fit */
+      }
+    
+      .tooltip-text {
+        width: auto; /* Allow tooltip text width to adjust based on content */
+        padding: 5px 10px; /* Ensure adequate padding around the text */
+      }
+      .controls-container {
+        margin-bottom: 0px;
+        margin-top: 20px;
+    }
+    .svg-container {
+        width:auto;
+        margin-top: 1px;
+        width: 100%;
+        margin-bottom: 200px;        
+    }
+  }
+  
+  

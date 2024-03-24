@@ -1,0 +1,20 @@
+.footer-container {
+    background-color: #2c3e50; /* Dark background for the footer */
+    color: #ecf0f1; /* Light text color for contrast */
+    text-align: center; /* Center-align the text */
+    padding: 20px 0; /* Padding above and below the text */
+    position: fixed; /* Fix position to the bottom of the page */
+    bottom: 0;
+    width: 100%; /* Ensure it spans the full width of the page */
+  }
+  
+  .footer-content h2 {
+    margin: 0 0 10px; /* Remove default margin and add some space below the heading */
+    font-size: 1.5em; /* Larger font size for the heading */
+  }
+  
+  .footer-content p {
+    margin: 0; /* Remove default margin */
+    font-size: 1em; /* Standard font size for the paragraph */
+  }
+  

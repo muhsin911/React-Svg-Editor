@@ -1,0 +1,153 @@
+.App {
+  display: flex;
+  align-items: flex-start; /* Align items at the top if needed */
+  padding: 10px; /* Add some padding around the entire app */
+  height: 100%;
+
+}
+
+
+.tool-buttons {
+  margin-bottom: 10px;
+  display: flex;
+  margin-left: 50px;
+  
+  gap: 10px;
+}
+
+.tool-button {
+  background-color: #31505a; /* Light blue background */
+  border: 2px solid #ffffff; /* White border for contrast */
+  border-radius: 10%; /* Circular buttons */
+  cursor: pointer;
+  margin-top: 100px;
+  padding: 10px; /* Adjust padding to create a smaller button effect */
+  transition: transform 0.2s ease-in-out, background-color 0.3s;
+  display: flex; /* Ensure content is centered */
+  justify-content: center;
+  align-items: center;
+  width: 80px; /* Fixed width */
+  height: 50px; /* Fixed height, making the button square or circular depending on border-radius */
+}
+
+.tool-button:hover {
+  transform: scale(1.1);
+  background-color: #87CEEB; /* A slightly darker shade of blue on hover */
+}
+
+.tooltip img {
+  width: 30px; /* Adjust based on your preference */
+  height: 30px; /* Adjust based on your preference */
+  display: block; /* Ensure images are centered within the button */
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  position: absolute;
+  z-index: 1;
+  bottom: 150%;
+  left: 50%;
+  margin-left: -60px;
+  font-size: 14px; 
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+.svg-container {
+  width:950px;
+  height: 500px;
+  
+  display: block;
+  margin: 20px auto; 
+  border: 2px solid #007bff; 
+  
+  background-color: #fff; 
+}
+
+
+@media (max-width: 768px) {
+  .tool-buttons {
+    flex-direction: row; 
+    align-items: center;
+    
+  }
+
+  .tool-button {
+    margin:auto;
+    width: 60px; 
+    height: 40px;
+  }
+  .App {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    width: 100%;
+  }
+}
+
+
+
+@media (max-width: 768px) {
+  .App {
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center align the content */
+    padding: 10px; /* Adjust padding */
+    background-color: #000; /* Keep background color */
+  }
+
+  .tool-buttons {
+    flex-direction: row; /* Stack buttons vertically */
+    align-items: center; /* Center align the buttons */
+    margin-left: 0; /* Reset margin-left */
+    margin-bottom: 10px; /* Adjust bottom margin */
+  }
+
+  .tool-button {
+    margin: 5px 0; /* Adjust margin to space out buttons */
+    width: 50px; /* Reduce button width */
+    height: 35px; /* Reduce button height */
+  }
+
+  .svg-container {
+    width: 100%; /* Set SVG container width to 100% of its parent's width */
+    max-width: 400px; /* Set a max-width to ensure it doesn't get too small */
+    height: auto; /* Adjust height automatically */
+    aspect-ratio: 16 / 9; /* Maintain aspect ratio (optional, adjust as needed) */
+    margin: 10px auto; /* Adjust margin */
+    border: 1px solid #007bff; /* Adjust border size */
+  }
+
+  .tooltip-text {
+    /* Adjust tooltip positioning */
+    bottom: 180%; /* Adjust position */
+    left: 50%; /* Ensure center alignment */
+    margin-left: -50px; /* Center the tooltip */
+    margin-bottom: -60px;
+    
+  }
+}
+
+@media (max-width: 480px) {
+  .tool-button {
+    margin: 2px; /* Reduce margin for smaller screen sizes */
+    width: 40px; /* Further reduce button width for small screens */
+    height: 30px; /* Further reduce button height for small screens */
+  }
+
+  .svg-container {
+    max-width: 300px; /* Reduce the max width for smaller screens */
+    margin: 5px auto; /* Adjust margin */
+    border: 1px solid #007bff; /* Keep consistent border */
+  }
+
+  
+}

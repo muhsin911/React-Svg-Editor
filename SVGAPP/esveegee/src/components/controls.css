@@ -1,0 +1,103 @@
+.controls-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 10px;
+    gap: 20px; /* Space between buttons */
+    overflow-y: auto; /* Allow vertical scrolling within the controls container */
+    /* max-height: 100vh; */
+  }
+  .button{
+    margin: 2px;
+  }
+
+  .button, .color-input-wrapper {
+    background-color: #030303e5;
+
+    
+    font-size: 16px; 
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 10px; 
+    width: 70px; 
+    height: 50px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+  }
+  
+  
+  .color-input-wrapper {
+    background-color: #030303e5; 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  .color-input {
+    cursor: pointer;
+    border: none; 
+    padding: 0; 
+    width: 90%; 
+    height: 70%; 
+  }
+  
+  .button:hover, .color-input-wrapper:hover {
+    background-color: #2e657a; 
+  }
+  
+  .button:disabled, .color-input-wrapper:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block; /* Adjust if necessary for your layout */
+  }
+  
+  .tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #e4b3b3; /* Adjust tooltip background for visibility against dark */
+    color: #4b4242;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 150%;
+    transform: translateX(-50%); /* Center the tooltip */
+    transition: visibility 0.2s ease-in-out;
+  }
+  
+  .tooltip:hover .tooltip-text {
+    visibility: visible;
+  }
+
+
+
+  @media (max-width: 768px) {
+    .controls-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        align-items: center;
+        width: auto;
+        padding: 10px;
+        gap: 20px; /* Space between buttons */
+        overflow-y: auto; /* Allow vertical scrolling within the controls container */
+        /* max-height: 100vh; */
+      }
+      .button{
+        margin: px;
+      }
+      
+  }
+
+  
+  
